@@ -1,0 +1,39 @@
+body {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
