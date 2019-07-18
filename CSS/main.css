@@ -1,39 +1,128 @@
-body {
+* {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #5b7989;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-h1 {
-    color: white;
-    text-shadow: 2px 2px 2px #02010a;
-    margin: 20px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-}
-
-section {
+body {
     display: flex;
     justify-content: center;
 }
+
+a:link,
+ :active,
+ :before,
+ :visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* ##--- CONTENEDOR PRINCIPAL---## */
 
 .contenedor {
     width: 900px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
 }
 
-img {
+
+/* ##--- HEADER ---## */
+
+header {
+    /* background: #4adf1c; */
+    background: #5b7989;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    /* background: #1ca8df; */
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #02010a;
+}
+
+.navbar {
+    /* background: #1ca8df; */
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #02010a;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    /* background: red; */
+    padding: 0px 8px;
+}
+
+
+/* ##--- SECTION 1 ---## */
+
+.contenedor-central {
+    background: #82c3a6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.imagen-central {
+    background: #808179;
+    margin: 30px;
+    border: solid 1px black;
+    /*  flex: 1 1 100%; */
+}
+
+.imagen-central img {
     width: 100%;
+}
+
+
+/* ##--- SECTION 2 ---## */
+
+.contenedor-secundario {
+    background: #d5c75f;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.imagen-secundaria {
+    background: #808179;
+    border: solid 1px black;
+    margin: 30px;
+    /* text-align: center */
+    /*   flex: 1 1 auto; */
+}
+
+.imagen-secundaria img {
+    width: 100%;
+}
+
+
+/* ##--- FOOTER ---## */
+
+footer {
+    /* background: #18bd0c; */
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+article {
+    /* background: #3786d4; */
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px 5px;
+    /*     margin: 5px 5px 100px 5px; */
+}
+
+h2 {
+    /* background: #37d444; */
+}
+
+span,
+.correo {
+    padding: 5px;
 }
