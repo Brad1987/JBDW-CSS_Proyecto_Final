@@ -87,6 +87,11 @@ h1 {
     width: 100%;
 }
 
+.text-secon {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
 .contenedor-pages {
     background: #d5c75f;
     display: flex;
@@ -172,10 +177,6 @@ article {
     padding: 5px;
 }
 
-.social {
-    /*     background: #82c3a6; */
-}
-
 .icons {
     width: 15%;
 }
@@ -194,7 +195,6 @@ article {
         justify-content: center;
     }
     footer {
-        /* justify-content: space-around; */
         flex-flow: column wrap;
         align-items: center;
     }
@@ -226,3 +226,30 @@ article {
         width: 90%;
     }
 }
+
+
+/* ##--- KEYFRAMES ---## */
+
+.up {
+    animation: ciclos 1s;
+}
+
+@-webkit-keyframes ciclos {
+    from {
+        margin-top: 150%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+
+/* @keyframes ciclos {
+    from {
+        margin-top: 150%;
+    }
+    
+    to {
+        margin-top: 0%;
+    }
+} */
