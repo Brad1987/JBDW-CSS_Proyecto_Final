@@ -9,6 +9,10 @@ body {
     /* @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap'); */
 }
 
+body a {
+    text-decoration: none;
+}
+
 
 /* ##--- CONTENEDOR PRINCIPAL---## */
 
@@ -42,7 +46,6 @@ h1 {
 .navbar a {
     padding: 0px 8px;
     font-size: 22px;
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -77,6 +80,7 @@ h1 {
 
 .imagen-secundaria {
     margin: 30px;
+    text-align: center
 }
 
 .imagen-secundaria img {
@@ -178,3 +182,47 @@ article {
 
 
 /* ##--- QUERYS ---## */
+
+@media screen and (max-width:900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .contenedor-secundario {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    footer {
+        /* justify-content: space-around; */
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    article {
+        display: flex;
+        flex-flow: column wrap;
+        width: 90%;
+        margin: 2px;
+    }
+    .redes-sociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .social {
+        margin: 0 10px;
+    }
+    .icons {
+        width: 50%;
+    }
+    /* #-- Pages --# */
+    .contenedor-pages {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .imagen-pages {
+        margin: 5px 10px;
+        width: 90%;
+    }
+}
