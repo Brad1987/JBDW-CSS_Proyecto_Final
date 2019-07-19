@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Dancing Script', cursive;
+    background: #02010a;
 }
 
 body a {
